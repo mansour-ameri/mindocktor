@@ -24,4 +24,4 @@ There is three credential for using this app
 all of these users come with there own role and permissions
 to use backend api client enable basic authentication and also use the provided username (password is the same as username for each one)
 
-*providing ID inside the POST and PUT body for all endpoint not needed.
+*providing ID inside the POST and PUT body for all endpoint not needed.*
