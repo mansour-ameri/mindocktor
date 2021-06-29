@@ -26,4 +26,5 @@ to use backend api client enable basic authentication and also use the provided 
 
 ### API documents
 Check all endpoint API within **{IP-address}:8080/swagger-ui-custom.html**
+
 both **officer** and **admin** user can access swagger endpoints
