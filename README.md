@@ -13,7 +13,7 @@ two container should be up and running ("if not just run **docker-compos up -d**
 *app-server* will run on port 8080
 
 ### API documents
-Check all backend API with **{IP-address}:8080/swagger-ui-custom.html**
+Check all endpoint API within **{IP-address}:8080/swagger-ui-custom.html**
 
 ### Using app credentials
 There is three credential for using this app
@@ -24,3 +24,4 @@ There is three credential for using this app
 all of these users come with there own role and permissions
 to use backend api client enable basic authentication and also use the provided username (password is the same as username for each one)
 
+*providing ID inside the POST and PUT body for all endpoint not needed.
