@@ -22,6 +22,5 @@ There is three credential for using this app
 * admin
 
 all of these users come with there own role and permissions
-
-to use backend api client should use basic authentication and use the provided username (password is the same as username for each one)
+to use backend api client enable basic authentication and also use the provided username (password is the same as username for each one)
 
