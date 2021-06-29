@@ -1,0 +1,32 @@
+version: '2'
+services:
+    mysql-dev:
+        container_name: mysql-dev
+        hostname: mysql-dev
+        image: mysql:latest
+        environment:
+          - MYSQL_ROOT_PASSWORD=qwer@1234
+          - MYSQL_DATABASE=mindoktor
+        ports:
+          - 3306:3306
+        working_dir: /opt/backup
+        networks: 
+          - mindok
+  
+    app-server:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: app-server
+        hostname: app-server
+        depends_on:
+            - mysql-dev
+        ports:
+            - 8080:8080
+        networks: 
+            - mindok
+
+networks:
+  mindok:
+    name: mindok
+    driver: bridge
